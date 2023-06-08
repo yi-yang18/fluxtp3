@@ -1,10 +1,4 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: weave-gitops-values
-  namespace: flux-system
-data:
-  adminUser.create: "true"
+adminUser:
+  create: true
   username: admin
   passwordHash: $2y$10$zTRdq9bLcEmGF27exGcKZ.LnSNIOpwV.n5H7tLP4/oyuSRGjTk7Ai
-
